@@ -1,0 +1,13 @@
+Urban = 'это моя строка'
+print(Urban[0])
+print(Urban[-1])
+print(Urban[2:5])
+print(Urban[::-1])
+print(len(Urban))
+# далее варианты:
+print('это новая строка ', Urban)
+# или
+Urban1 = 'это новая строка '
+print(Urban1, Urban)
+# или
+print(Urban1 + Urban)
