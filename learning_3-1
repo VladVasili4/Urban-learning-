@@ -1,0 +1,11 @@
+def test():
+    c = 7
+    d = 9
+    print(c, d)
+
+test()
+
+def test2(i = 21, j = 32, k = 'lol'):
+    print(i, j, k)
+
+test2()
