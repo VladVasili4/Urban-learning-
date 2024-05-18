@@ -6,9 +6,9 @@ print('Какое число на левом камне?')
 kod = input()
 if kod.isdigit():
     left_number = int(kod)
-    if left_number in left_stone:
-        for i in right_stone:
-            for j in right_stone:
+       if left_number in range(3,21):   # У меня сдесь было in left_stone, а так можно не создавать список left_stone
+        for i in right_stone:           # здесь тоже надо использовать range(1, 21)
+            for j in right_stone:       # здесь тоже надо использовать range(1, 21), тогда списки left_stone, right_stone не нужны
                 if left_number % (i + j) == 0:
                     para = [i, j]
                     if sorted(para) not in password_:
